@@ -5,10 +5,12 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
     <% messages.forEach(function(message) { %>
-          <p>Message from <%= message.user %>: <%= message.text %> (added <%= message.added %>)</p>
-    <% }); %>    <%= messages.forEach(function(message)) { %>
+  <div>
+    <p><strong>User:</strong> <%= message.user %></p>
+    <p><strong>Message:</strong> <%= message.text %></p>
+    <p><strong>Date:</strong> <%= message.added %></p>
+  </div>
+<% }); %>
   </body>
 </html>
